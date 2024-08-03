@@ -23,8 +23,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-    - name: Build and push image to GHCR
-      run: |
-        docker login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} ${{ env.REGISTRY }}
-        docker build . -t ${{ REGISTRY }}/${{ IMAGE_NAME }}:${{ github.run_number }}
-        docker push ${{ REGISTRY }}/${{ IMAGE_NAME }}:${{ github.run_number }}
+      - name: Build and push image to GHCR
+        run: |
+          docker login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} ${{ env.REGISTRY }}
+          docker build . -t ${{ REGISTRY }}/${{ IMAGE_NAME }}:${{ github.run_number }}
+          docker push ${{ REGISTRY }}/${{ IMAGE_NAME }}:${{ github.run_number }}
