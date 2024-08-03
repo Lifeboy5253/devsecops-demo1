@@ -15,3 +15,6 @@ docker command for the build - docker build . -t project1-api
 - 1st container is a SDK container with a source code compiled in its binary form.
 - 2nd container is the run container where the binary artifacts from the previous container are copied.
 ---
+Created initial CI pipeline to build and test the source code.
+github stores CI pipeline in .github/workflow folder and the name of the CI pipeline file is dotnet.yml
+---
