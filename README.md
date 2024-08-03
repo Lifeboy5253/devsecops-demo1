@@ -11,6 +11,7 @@ Initial Dotnet application creation commands
 - dotnet sln add Project1ApiTest\Project1ApiTest.csproj
 ---
 Dockerfile created with 2 container 
+docker command for the build - docker build . -t project1-api
 - 1st container is a SDK container with a source code compiled in its binary form.
 - 2nd container is the run container where the binary artifacts from the previous container are copied.
 ---
