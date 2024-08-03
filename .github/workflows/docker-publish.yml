@@ -26,5 +26,5 @@ jobs:
       - name: Build and push image to GHCR
         run: |
           docker login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} ${{ env.REGISTRY }}
-          docker build . -t ${{ REGISTRY }}/${{ IMAGE_NAME }}:${{ github.run_number }}
-          docker push ${{ REGISTRY }}/${{ IMAGE_NAME }}:${{ github.run_number }}
+          docker build . -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
+          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
