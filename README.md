@@ -28,3 +28,8 @@ Added 3 security scan tools
 ---
 Added pipeline to upload container image to JFrog Artifactory
 ---
+Added Vulnerability to the pipeline
+- 1st SBOM - using 3 package version which has vulnerability (Newton.Json, Azure.Identity, System.Text.Json) - Project1Api.csproj
+- 2nd Secret - added password - AppSettings.json
+- 3rd Container image - changed the base container image from debian to ubuntu (jammy) - Dockerfile
+---
