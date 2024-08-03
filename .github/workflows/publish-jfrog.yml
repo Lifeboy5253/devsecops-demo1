@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Tag and push Docker Image
         env:
-          IMAGE_NAME: ${{ secrets.JF_URL }}/devsecops-demo1/project1api:1.0.${{ github.run_number }}
+          IMAGE_NAME: avantgardeclothing.jfrog.io/devsecops-demo1/project1api:1.0.${{ github.run_number }}
         run: |
           jf docker build -t $IMAGE_NAME .
           jf docker push $IMAGE_NAME
