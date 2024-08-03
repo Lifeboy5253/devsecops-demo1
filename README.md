@@ -21,3 +21,8 @@ github stores CI pipeline in .github/workflow folder and the name of the CI pipe
 CI pipeline to build container image and publish to github container registry completed
 .github/workflow/docker-publish.yml
 ---
+Added 3 security scan tools 
+- 1st tool Dependabot (native github action for dependency scanning and fixing)
+- 2nd tool CodeQL (native github action for SAST scan)
+- 3rd tool Frogbot scan and fix (Xray)
+---
