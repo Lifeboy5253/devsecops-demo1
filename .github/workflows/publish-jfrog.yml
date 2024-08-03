@@ -1,0 +1,27 @@
+name: Publish container image to JFrog Artifactory
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  build-and-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup JFrog CLI
+        uses: jfrog/setup-jfrog-cli@v3
+        env:
+          JF_URL: ${{ secrets.JF_URL }}
+          JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+
+      - name: Build Tag and push Docker Image
+        env:
+          IMAGE_NAME: ${{ JF_URL }}/devsecops-demo1/project1api:${{ github.run_number }}
+        run: |
+          jf docker build -t $IMAGE_NAME .
+          jf docker push $IMAGE_NAME
+          

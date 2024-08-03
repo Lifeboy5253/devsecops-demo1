@@ -26,3 +26,5 @@ Added 3 security scan tools
 - 2nd tool CodeQL (native github action for SAST scan)
 - 3rd tool Frogbot scan and fix (Xray)
 ---
+Added pipeline to upload container image to JFrog Artifactory
+---
