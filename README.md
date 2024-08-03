@@ -18,3 +18,6 @@ docker command for the build - docker build . -t project1-api
 Created initial CI pipeline to build and test the source code.
 github stores CI pipeline in .github/workflow folder and the name of the CI pipeline file is dotnet.yml
 ---
+CI pipeline to build container image and publish to github container registry completed
+.github/workflow/docker-publish.yml
+---
