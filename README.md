@@ -2,7 +2,7 @@ devsecops-demo1 git repository
 ---
 **Goal**- Exploring  DevSecOps with a dotnet sample project
 
-**There are 2 projects** - dotnet WebApi which has restful http get method and a 2nd unit test project which has a single unit test. These projects are using default template from dotnet.
+**There are 2 projects** - dotnet WebApi which has restful http get method and a 2nd unit test project with a single unit test. These projects are using default template from dotnet.
 
 ---
 Initial Dotnet application creation commands 
@@ -14,9 +14,11 @@ Initial Dotnet application creation commands
 ---
 
 **Dockerfile created with 2 container **
+
 docker command for the build - docker build . -t project1-api
-- 1st container is a SDK container with a source code compiled in its binary form.
-- 2nd container is the run container where the binary artifacts from the previous container are copied.
+
+- **1st container** is an SDK container with a source code compiled in its binary form.
+- **2nd container** is the run container where the binary artifacts from the previous container are copied.
 
 ---
 
