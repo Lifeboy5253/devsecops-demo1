@@ -36,6 +36,6 @@ Added Vulnerability to the pipeline
 To run the container, execute the below docker command and navigate to http://localhost:8080/Weatherforecast
 - docker run -p 8080:8080 ghcr.io/lifeboy5253/project1api:20
 ---
-Link to the slide 
-    - more information - https://docs.google.com/presentation/d/1MQtn1BIOUtnIYJ8qws_kMO-e8R9Xp-Bj1k0QzyhskdQ/edit?usp=sharing
+Link to the slide - https://docs.google.com/presentation/d/1MQtn1BIOUtnIYJ8qws_kMO-e8R9Xp-Bj1k0QzyhskdQ/edit?usp=sharing
+
 ---
