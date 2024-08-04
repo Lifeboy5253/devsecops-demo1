@@ -1,7 +1,9 @@
 devsecops-demo1 git repository
 ---
-Exploring  DevSecOps with a dotnet sample project
+Goal- Exploring  DevSecOps with a dotnet sample project
+
 There are 2 projects - dotnet WebApi which has restful http get method and a 2nd unit test project which has a single unit test. These projects are using default template from dotnet.
+
 ---
 Initial Dotnet application creation commands 
 - dotnet new sln -n Project1
