@@ -11,7 +11,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy AS runtime
 
 # Use non root port.
 EXPOSE 8080
-EXPOSE 8443
 
 # Copy application binaries
 USER app
