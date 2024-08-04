@@ -33,4 +33,6 @@ Added Vulnerability to the pipeline
 - 2nd Secret - added password - AppSettings.json
 - 3rd Container image - changed the base container image from debian to ubuntu (jammy) - Dockerfile
 ---
-Docker run command: docker run -p 8080:8080 ghcr.io/lifeboy5253/project1api:18
+To run the container, execute the below docker command and navigate to http://localhost:8080/Weatherforecast
+- docker run -p 8080:8080 ghcr.io/lifeboy5253/project1api:20
+---
