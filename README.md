@@ -43,9 +43,12 @@ Added pipeline to upload container image to JFrog Artifactory
 ---
 
 **Added Vulnerability to the pipeline**
-- 1st SBOM - using 3 package version which has vulnerability (Newton.Json, Azure.Identity, System.Text.Json) - Project1Api.csproj
-- 2nd Secret - added password - AppSettings.json
-- 3rd Container image - changed the base container image from debian to ubuntu (jammy) - Dockerfile
+To evaluate the effectiveness of various security tools, the following vulnerabilities have been intentionally introduced:
+
+- 1st- SBOM-related Vulnerability - Packages: Utilizing versions with known vulnerabilities. Packages- Newton.Json, Azure.Identity, System.Text.Json) - Project1Api.csproj
+- 2nd- Secret-related Vulnerability - Added a hardcoded password to the configuration file. File: AppSettings.json
+- 3rd- Container Image-related Vulnerability - Changed the base container image from Debian to Ubuntu (Jammy) - File: Dockerfile 
+- updated (8/5), Changed the base container base image to Alpine, which has a smaller footprint, to observe if it results in fewer security vulnerabilities. File: Dockerfile 
 
 ---
 **To run the container**, execute the below docker command and navigate to http://localhost:8080/Weatherforecast
