@@ -39,8 +39,7 @@ Github stores CI pipeline in .github/workflow folder and the name of the CI pipe
 - 2nd tool CodeQL (native github action for SAST scan)
 - 3rd tool [![Scanned by Frogbot](https://raw.github.com/jfrog/frogbot/master/images/frogbot-badge.svg)](https://docs.jfrog-applications.jfrog.io/jfrog-applications/frogbot)
 ---
-Added pipeline to upload container image to JFrog Artifactory
----
+**Added pipeline to upload container image to JFrog Artifactory**
 
 ---
 **Added Vulnerability to the pipeline**
