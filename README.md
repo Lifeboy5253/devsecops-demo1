@@ -42,6 +42,7 @@ Github stores CI pipeline in .github/workflow folder and the name of the CI pipe
 Added pipeline to upload container image to JFrog Artifactory
 ---
 
+---
 **Added Vulnerability to the pipeline**
 To evaluate the effectiveness of various security tools, the following vulnerabilities have been intentionally introduced:
 
@@ -49,7 +50,6 @@ To evaluate the effectiveness of various security tools, the following vulnerabi
 - 2nd- Secret-related Vulnerability - Added a hardcoded password to the configuration file. File: AppSettings.json
 - 3rd- Container Image-related Vulnerability - Changed the base container image from Debian to Ubuntu (Jammy) - File: Dockerfile 
 - updated (8/5), Changed the base container base image to Alpine, which has a smaller footprint, to observe if it results in fewer security vulnerabilities. File: Dockerfile 
-
 ---
 **To run the container**, execute the below docker command and navigate to http://localhost:8080/Weatherforecast
 - docker run -p 8080:8080 ghcr.io/lifeboy5253/project1api:20
