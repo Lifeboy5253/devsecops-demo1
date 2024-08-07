@@ -13,7 +13,7 @@ Initial Dotnet application creation commands
 - dotnet new mstest -o Project1ApiTest
 - dotnet sln add Project1ApiTest\Project1ApiTest.csproj
 
-- _Credits to my dotnet friend for helping me out with the code_
+- _**Credits to my dotnet friend for helping me out with the code**_
 ---
 
 **Dockerfile created with 2 container **
