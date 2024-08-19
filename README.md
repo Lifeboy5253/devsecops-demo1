@@ -53,6 +53,6 @@ To evaluate the effectiveness of various security tools, the following vulnerabi
 **To run the container**, execute the below docker command and navigate to http://localhost:8080/Weatherforecast
 - docker run -p 8080:8080 ghcr.io/lifeboy5253/project1api:20
 ---
-**Link to the slide** - https://docs.google.com/presentation/d/1MQtn1BIOUtnIYJ8qws_kMO-e8R9Xp-Bj1k0QzyhskdQ/edit?usp=sharing
+**Link to the slide** - https://docs.google.com/presentation/d/1y9XMi4D8vohxNJt6B7zI379AUNZPdAnZL_vGw1TNSb0/edit?usp=sharing
 
 ---
